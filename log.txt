@@ -1,0 +1,124 @@
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1
+$ git --version
+git version 2.7.4.windows.1
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1
+$ git init
+Initialized empty Git repository in C:/164383_chaitali/gitday1/.git/
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ touch index.html
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git add index.html
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git commit index.html
+[master (root-commit) 14cbad8] nitial  Initial commit
+ Committer: Gaikar <chaitali.gaikar@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 8 insertions(+)
+ create mode 100644 index.html
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ touch info.txt
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ touch .gitignore
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git add .
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git commit index.html
+Aborting commit due to empty commit message.
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git commit index.html
+[master 850f8e8] nitial
+ Committer: Gaikar <chaitali.gaikar@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+
+cgaikar@DIN80043018 MINGW64 /c/164383_chaitali/gitday1 (master)
+$
