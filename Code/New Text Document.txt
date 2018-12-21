@@ -1,0 +1,8 @@
+
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("{zipcode}")// http://localhost:8081/assignment/webapi/user/{zipcode}
+	public AddressPOJO getData(@PathParam ("zipcode") String zipcode) {
+		
+		return dao.getAddress(zipcode);
+	}
